@@ -41,6 +41,7 @@ puts "#{username} has #{posts_count} public posts." if ENV['DEBUG']
 images = image_table.divs(class: %w[_mck9w _gvoze _f2mse])
 images.size #=> 12
 
+b.send_keys :end
 load_more_button.click
 
 puts "Count of currently shown images: #{images.count}." if ENV['DEBUG']
