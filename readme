@@ -1,0 +1,9 @@
+A few scripts to scrape Instagram.
+
+ruby click_on_first_image.rb [username]
+  Load a user page, click on the first image, wait 3 seconds, and exit.
+  This is for checking that the basic assumptions about the Instagram web app
+  are still hold.
+
+ruby get_posts.rb [username] > /tmp/file_with_links
+  Write to stdout the links to all public posts separated by newlines.
