@@ -1,7 +1,5 @@
-require 'open-uri'
-require 'yaml'
+require 'fileutils'
 require 'watir'
-require 'nokogiri'
 
 directory, path_to_list = ARGV[0..1]
 
@@ -9,7 +7,6 @@ if Dir.exist? directory
   fail "#{directory} already exists. We won't risk overriding its content."
 end
 
-require 'fileutils'
 FileUtils.mkdir_p directory
 
 browser = Watir::Browser.new
