@@ -1,13 +1,9 @@
-require 'fileutils'
 require 'watir'
 
 directory, path_to_list = ARGV[0..1]
 
-if Dir.exist? directory
-  fail "#{directory} already exists. We won't risk overriding its content."
-end
-
-FileUtils.mkdir_p directory
+require_relative 'prepare_directory'
+prepare_directory directory
 
 browser = Watir::Browser.new
 

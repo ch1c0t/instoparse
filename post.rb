@@ -1,7 +1,8 @@
-require 'fileutils'
 require 'open-uri'
 require 'yaml'
 require 'nokogiri'
+
+require_relative 'prepare_directory'
 
 class Post
   def initialize browser:, link:
@@ -19,14 +20,6 @@ class Post
   end
 
   private
-    def prepare_directory directory
-      if Dir.exist? directory
-        fail "#{directory} already exists. We won't risk overriding its content."
-      end
-
-      FileUtils.mkdir_p directory
-    end
-
     def save_date_to directory
       IO.write "#{directory}/date", @browser.time.datetime
     end
