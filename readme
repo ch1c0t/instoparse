@@ -5,5 +5,11 @@ ruby click_on_first_image.rb [username]
   This is for checking that the basic assumptions about the Instagram web app
   are still hold.
 
-ruby get_posts.rb [username] > /tmp/file_with_links
+ruby get_posts.rb [username] > [file_with_links]
   Write to stdout the links to all public posts separated by newlines.
+
+ruby save_post.rb [directory] [link]
+  Save data from the post at [link] to [directory].
+
+ruby save_list.rb [directory] [file_with_links]
+  Save data from the posts in [file_with_links] to [directory].
