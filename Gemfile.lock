@@ -7,7 +7,7 @@ GEM
     ffi (1.9.18)
     method_source (0.9.0)
     mini_portile2 (2.3.0)
-    nokogiri (1.8.1)
+    nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
     pry (0.11.3)
       coderay (~> 1.1.0)
@@ -16,7 +16,7 @@ GEM
     selenium-webdriver (3.8.0)
       childprocess (~> 0.5)
       rubyzip (~> 1.0)
-    watir (6.10.2)
+    watir (6.10.3)
       selenium-webdriver (~> 3.4, >= 3.4.1)
 
 PLATFORMS
