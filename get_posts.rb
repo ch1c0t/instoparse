@@ -39,7 +39,7 @@ load_more_button&.click
 puts "Count of currently shown images: #{images.count}." if ENV['DEBUG']
 until images.count == posts_count
   b.send_keys :end
-  images = image_table.divs(class: %w[_mck9w _gvoze _f2mse])
+  images = div.divs(class: %w[_mck9w _gvoze _f2mse])
   sleep 1
 end
 
